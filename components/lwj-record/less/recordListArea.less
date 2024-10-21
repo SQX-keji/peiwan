@@ -1,0 +1,58 @@
+@import  './common.less';
+.record_box {
+	// 录音区域样式
+	.recordListArea {
+		width: 100%;
+		height: 70%;
+		.flex_column();
+		// 滚动区域样式
+		.scrollView {
+			overflow: scroll;
+			.loopList {
+				display: flex;
+				align-items: center;
+				// 复选框样式
+				.checkedBox {
+					.flex_center();
+				}
+				// 正在播放的录音会字体变红加粗
+				.mark {
+					font-weight: bold;
+					color: red;
+				}
+				.loopItem {
+					height: 60px;
+					margin-left: 2%;
+					flex: 1;
+					.flex_column();
+					justify-content: space-evenly;
+					// 录音的名字
+					.itemName {
+						width: 60vw;
+						font-size: 40upx;
+						.ellipsis();
+					}
+					// 录音的时间
+					.itemTime {
+						width: 60vw;
+						font-size: 30upx;
+						.ellipsis();
+					}
+				}
+			}
+		}
+		// 批量删除按钮样式
+		.deleteArray {
+			color: red;
+			font-size: 40upx;
+			padding: 1% 0;
+			text-align: right;
+		}
+	}
+}
+.record_box {
+	width: 100vw;
+	.flex_column();
+	box-sizing: border-box;
+	padding: 0 2%;
+}

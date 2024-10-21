@@ -1,0 +1,45 @@
+@import  './common.less';
+.record_box {
+	// 工具盒子
+	.toolBox {
+		height: 30%;
+		.flex_column();
+		// 显示时间区域
+		.timeArea {
+			height: 30%;
+			font-size: 50upx;
+			.flex_center();
+		}
+		// 按钮区域
+		.buttonArea {
+			height: 70%;
+			position: relative;
+			.flex_center();
+			.btn {
+				background-color: white;
+				width: 200upx;
+				height: 200upx;
+				box-shadow:inset 0 0 2em #0984e3;
+				border-radius: 50%;
+				.flex_center();
+				&>view {
+					width: 70%;
+					height: 70%;
+					border-radius: 50%;
+					background-color: #d63031;
+				}
+				// 让中心按钮变为方形状
+				.square {
+					width: 40%;
+					height: 40%;
+					border-radius: 10px;
+				}
+			}
+			// 齿轮按盒子的样式
+			.gearArea {
+				.position_center();
+				left: 90%;
+			}
+		}
+	}
+}

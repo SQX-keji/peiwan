@@ -1,0 +1,239 @@
+{
+	"easycom": {
+		"^u-(.*)": "@/uview-ui/components/u-$1/u-$1.vue"
+	},
+	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+		
+		{
+			"path": "pages/index/index",
+			"style": {
+				"navigationBarTitleText": "首页"
+			}
+		},
+		{
+			"path": "pages/index/search/index",
+			"style": {
+				"navigationBarTitleText": "搜索"
+			}
+		},
+		{
+			"path": "pages/index/game/gameList",
+			"style": {
+				"navigationBarTitleText": "游戏列表"
+			}
+		},
+		{
+			"path": "pages/index/game/order",
+			"style": {
+				"navigationBarTitleText": "订单详情"
+			}
+		},
+		{
+			"path": "pages/index/game/orderDet",
+			"style": {
+				"navigationBarTitleText": "订单详情"
+			}
+		},
+		
+		{
+			"path": "pages/msg/index",
+			"style": {
+				"navigationBarTitleText": "消息"
+			}
+		},
+		{
+			"path": "pages/msg/im",
+			"style": {
+				"navigationBarTitleText": "消息"
+			}
+		},
+		
+		{
+			"path": "pages/my/index",
+			"style": {
+				"navigationBarTitleText": "我的"
+			}
+		},
+		
+		{
+			"path": "pages/public/login",
+			"style": {
+				"navigationBarTitleText": "登录"
+			}
+		},
+		{
+			"path": "pages/public/bind",
+			"style": {
+				"navigationBarTitleText": "换绑手机号"
+			}
+		},
+		{
+			"path": "pages/public/forgetPwd",
+			"style": {
+				"navigationBarTitleText": "重置密码"
+			}
+		},
+		
+		{
+			"path": "pages/public/loginphone",
+			"style": {
+				"navigationBarTitleText": "登录"
+			}
+		},
+		{
+			"path": "pages/public/pwd",
+			"style": {
+				"navigationBarTitleText": "修改密码"
+			}
+		},
+		{
+			"path": "pages/public/register",
+			"style": {
+				"navigationBarTitleText": "注册"
+			}
+		}
+	],
+	"subPackages": [{
+		"root": "my",
+		"pages": [{
+			"path": "gird/guanzhu",
+			"style": {
+				"navigationBarTitleText": "我的粉丝"
+			}
+		},
+		{
+			"path": "gird/visitor",
+			"style": {
+				"navigationBarTitleText": "最近访客"
+			}
+		},
+		{
+			"path": "renzheng/index",
+			"style": {
+				"navigationBarTitleText": "实名认证"
+			}
+		},
+		{
+			"path": "vip/index",
+			"style": {
+				"navigationBarTitleText": "开通会员"
+			}
+		},
+		{
+			"path": "wallet/index",
+			"style": {
+				"navigationBarTitleText": "我的钱包"
+			}
+		},
+		{
+			"path": "order/index",
+			"style": {
+				"navigationBarTitleText": "我的订单"
+			}
+		},
+		{
+			"path": "order/pay",
+			"style": {
+				"navigationBarTitleText": "待付款"
+			}
+		},
+		{
+			"path": "publish/index",
+			"style": {
+				"navigationBarTitleText": "我的发布"
+			}
+		},
+		{
+			"path": "publish/editor",
+			"style": {
+				"navigationBarTitleText": "发布需求"
+			}
+		},
+		{
+			"path": "setting/customer",
+			"style": {
+				"navigationBarTitleText": "在线客服"
+			}
+		},
+		{
+			"path": "feedback/index",
+			"style": {
+				"navigationBarTitleText": "意见反馈"
+			}
+		},
+		{
+			"path": "setting/help",
+			"style": {
+				"navigationBarTitleText": "帮助中心"
+			}
+		},
+		{
+			"path": "setting/index",
+			"style": {
+				"navigationBarTitleText": "设置中心"
+			}
+		},
+		{
+			"path": "setting/mimi",
+			"style": {
+				"navigationBarTitleText": "隐私政策"
+			}
+		},
+		{
+			"path": "setting/xieyi",
+			"style": {
+				"navigationBarTitleText": "用户协议"
+			}
+		},
+		{
+			"path": "setting/about",
+			"style": {
+				"navigationBarTitleText": "关于我们"
+			}
+		},
+		{
+			"path": "setting/userinfo",
+			"style": {
+				"navigationBarTitleText": "个人资料"
+			}
+		},
+		{
+			"path": "setting/userphone",
+			"style": {
+				"navigationBarTitleText": "修改手机号"
+			}
+		}
+		]
+	}],
+	"globalStyle": {
+		"navigationBarTextStyle": "white",
+		"navigationBarTitleText": "uni-app",
+		"navigationBarBackgroundColor": "#1E1F31",
+		"backgroundColor": "#1E1F31"
+	},
+	"tabBar": {
+		"color": "#909399",
+		"selectedColor": "#5074FF",
+		"backgroundColor": "#1E1F31",
+		"borderStyle": "black",
+		"list": [{
+				"pagePath": "pages/index/index",
+				"iconPath": "static/tabbar/index@2x.png",
+				"selectedIconPath": "static/tabbar/index_@2x.png",
+				"text": "首页"
+			},
+			{
+				"pagePath": "pages/msg/index",
+				"iconPath": "static/tabbar/learn@2x.png",
+				"selectedIconPath": "static/tabbar/learn_@2x.png",
+				"text": "消息"
+			},
+			{
+				"pagePath": "pages/my/index",
+				"iconPath": "static/tabbar/me@2x.png",
+				"selectedIconPath": "static/tabbar/me_@2x.png",
+				"text": "我的"
+			}
+		]
+	}
+}
